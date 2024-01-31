@@ -1,4 +1,3 @@
-// $("document").ready(function(){
 function openPomodoro() {
     $("#pomodoro").removeClass("pomodoroEffect");
     $(".minute").html("25");
@@ -128,12 +127,12 @@ function playTimer() {
    
             minutes = Math.floor(seconds / 60);
              var remainingSeconds = seconds % 60;
-             if(remainingSeconds === 0){
-                clearInterval(interval);
+
+             if(minutes === 0 && remainingSeconds === 0){
                 playTimesUpSound();
+                clearInterval(interval);
              }
-  
-       
+            
              remainingSeconds = remainingSeconds.toString().split('');
             var remainingSecond = remainingSeconds.map(Number);
 
@@ -183,5 +182,5 @@ function enableBtn() {
     document.getElementById("play").disabled = false;
 }
 
-// });
+
 

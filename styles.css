@@ -19,18 +19,26 @@ body{
 
 }
 
+#geez {
+    font-size: 4rem;
+}
+
+#description{
+    font-size: 2rem;
+}
+
 #time {
-    font-size: 7vw;
+    font-size: 7rem;
 }
 
 #pomodoro, #break{
-    font-size: 1vw;
+    font-size: 2.5rem;
     padding-inline: 3vw; 
     margin: 0;
 }
 
 #pause img, #play img, #stop img{
-    width: 3vw;
+    width: 3.5rem;
     height: 50%;
 }
 
@@ -75,3 +83,80 @@ footer{
     color: bisque;
 }
 
+@media (max-width: 608px){
+    #geez {
+        font-size: 3rem;
+    }
+    #description{
+        font-size: 1.5rem;
+    }
+    #pause img, #play img, #stop img{
+        width: 3em;
+        height: 50%;
+    }
+    .startContainer {
+        margin-top: auto;
+        margin-bottom: 40px;
+        z-index: 999;
+    }
+    #time {
+        font-size: 5rem;
+        margin-top: 10px;
+    }
+    #pomodoro, #break{
+        font-size: 1.5rem;
+        padding-inline: 5vw; 
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 480px){
+    #geez {
+        font-size: 2.5rem;
+    }
+    #description{
+        font-size: 1.2rem;
+    }
+    #pause img, #play img, #stop img{
+        width: 2em;
+        margin-top: auto;
+    }
+    .startContainer {
+        margin-top: auto;
+        z-index: 999;
+    }
+    #time {
+        font-size: 5rem;
+        margin-top: 1.2rem;
+   
+    }
+    #pomodoro, #break{
+        padding-inline: 1.5rem;
+    }
+}
+@media (max-width: 316px){
+    #geez {
+        font-size: 2.2rem;
+    }
+    #description{
+        font-size: 1rem;
+    }
+    #pause img, #play img, #stop img{
+        width: 2em;
+        /* margin-top: auto; */
+    }
+    .startContainer {
+        margin-top: auto;
+        z-index: 999;
+    }
+    #time {
+        font-size: 3.5rem;
+        margin-top: 1rem;
+   
+    }
+    #pomodoro, #break{
+        padding-inline: 1;
+        font-size: 1rem;
+        margin-top: 10vh;
+    }
+}
